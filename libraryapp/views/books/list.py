@@ -11,7 +11,6 @@ def book_list(request):
             conn.row_factory = model_factory(Book)
 
             db_cursor = conn.cursor()
-
             db_cursor.execute("""
             SELECT
                 b.id,
