@@ -22,7 +22,7 @@ class Librarian(models.Model):
     # property
 
     @receiver(post_save, sender=User)
-    def create_librarian(self, sender, instance, created, **kwargs):
+    def create_librarian(sender, instance, created, **kwargs):
         if created:
             Librarian.objects.create(user=instance)
 
@@ -30,5 +30,5 @@ class Librarian(models.Model):
     # object will be saved.
 
     @receiver(post_save, sender=User)
-    def save_librarian(self, sender, instance, **kwargs):
+    def save_librarian(sender, instance, **kwargs):
         instance.librarian.save()
