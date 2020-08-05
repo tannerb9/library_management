@@ -13,3 +13,18 @@ INSERT INTO libraryapp_book
   (title, isbn, year_published, location_id, author, librarian_id)
 VALUES
   ('Taiko', 4275747474873, 2001, 1, 'Eiji Yoshikawa', 1);
+
+INSERT INTO libraryapp_book
+  (title, isbn, year_published, location_id, author, librarian_id)
+VALUES
+  ('The Golem and the Jinni', 8592475822, 2013, 1, 'Helene Wecker', 2);
+
+INSERT INTO libraryapp_book
+  (title, isbn, year_published, location_id, author, librarian_id)
+VALUES
+  ('The Old Man and the Sea', 8234938989, 1952, 1, 'Ernest Hemingway', 3);
+
+INSERT INTO libraryapp_book
+  (title, isbn, year_published, location_id, author, librarian_id)
+VALUES
+  ('Siddhartha', 8092309209, 1922, 1, 'Herman Hesse', 4);
