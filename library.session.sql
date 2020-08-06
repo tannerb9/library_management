@@ -28,3 +28,4 @@ INSERT INTO libraryapp_book
   (title, isbn, year_published, location_id, author, librarian_id)
 VALUES
   ('Siddhartha', 8092309209, 1922, 1, 'Herman Hesse', 4);
+
