@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Bangazon</title>
+    <title>Library</title>
   </head>
   <body>
     <h1>Inventory Book</h1>
@@ -24,7 +24,7 @@
         </fieldset>
         <fieldset>
           <label for="year_published">Year Published: </label>
-          <input id="year_published" type="number" name="year_published" value="{{ year_published }}">
+          <input id="year_published" type="number" name="year_published" value="{{ book.year_published }}">
         </fieldset>
         <fieldset>
           <label for="isbn">ISBN: </label>
@@ -45,6 +45,7 @@
             <input type="submit" value="Update" />
         {% else %}
             <input type="submit" value="Create" />
+        {% endif %}
 
     </form>
   </body>
