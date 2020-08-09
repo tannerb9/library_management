@@ -29,3 +29,13 @@ INSERT INTO libraryapp_book
 VALUES
   ('Siddhartha', 8092309209, 1922, 1, 'Herman Hesse', 4);
 
+SELECT
+  l.id,
+  l.location_id,
+  l.user_id,
+  u.first_name,
+  u.last_name,
+  u.email
+FROM libraryapp_librarian l
+  JOIN auth_user u on l.user_id = u.id;
+
